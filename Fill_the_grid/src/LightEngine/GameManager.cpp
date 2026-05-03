@@ -63,6 +63,10 @@ void GameManager::Run()
 
 	//#TODO : Load somewhere else
 	bool fontLoaded = mFont.loadFromFile("../../../res/Hack-Regular.ttf");
+
+	if (!fontLoaded)
+		fontLoaded = mFont.loadFromFile("res/fonts/Hack-Regular.ttf");
+
 	_ASSERT(fontLoaded);
 
 	_ASSERT(mpScene != nullptr);

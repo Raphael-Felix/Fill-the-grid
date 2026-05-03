@@ -111,7 +111,7 @@ void MainScene::OnInitialize()
 
 		for (int i = 0; i < 3; i++)
 		{
-			tempStar = CreateSprite<Entity>(120, 50, "../../../res/assets/icon_star.png", nullptr);
+			tempStar = CreateSprite<Entity>(120, 50, "res/assets/icon_star.png", nullptr);
 			tempStar->SetPosition(480 + 100 * i, 300, 0.f, 0.f);
 			tempStar->SetActive(false);
 			m_scoreStars.push_back(tempStar);
@@ -134,14 +134,14 @@ void MainScene::OnInitialize()
 		m_soundManager = SoundManager::GetInstance();
 		m_soundManager->SetGlobalVolume(500);
 		m_soundManager->SetMusicVolume(5);
-		m_soundManager->LoadSound("../../../res/sounds/click1.wav");
-		m_soundManager->LoadSound("../../../res/sounds/swipe1.wav");
-		m_soundManager->LoadSound("../../../res/sounds/swipe2.wav");
+		m_soundManager->LoadSound("res/sounds/click1.wav");
+		m_soundManager->LoadSound("res/sounds/swipe1.wav");
+		m_soundManager->LoadSound("res/sounds/swipe2.wav");
 	}
 
 	// Musique
 	{
-		m_soundManager->PlayMusic("../../../res/musics/house.ogg", true);
+		m_soundManager->PlayMusic("res/musics/house.ogg", true);
 	}
 }
 
