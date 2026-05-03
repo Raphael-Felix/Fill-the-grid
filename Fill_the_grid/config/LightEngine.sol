@@ -4,7 +4,7 @@
     "projects": [
         "LightEngine.prj",
         "Sample.prj",
-        "PuzzleGame.prj"
+        "Fill_the_grid.prj"
     ],
     "solution_name": "LightEngine",
     "version": "16",
